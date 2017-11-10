@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Kirti}{Joyejob}{ \urlstyle{same}\\
+\href{mailto:vkj1804@gmail.com}{vkj1804@gmail.com} | 514.834.5234
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Concordia University}
+\descript{BA Joint Major Maths \& Stats \& Computer Applications}
+\location{Graduated Spring 2017}
+First Year Bursary
+\sectionsep
+
+
+\subsection{University of Cambridge}
+\descript{Advanced Levels (A-Levels)}
+Cambridge International Examinations\\
+\location{Graduated Fall 2010 | Mauritius}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn://  \href{https://www.linkedin.com/in/kjoyejob}{\custombold{kjoyejob}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Object-Oriented Programming in Java \\
+Principles of Programming Languages \\
+Operating Systems \\
+Data Structures \& Algorithms \\
+Web Programming \\
+\sectionsep
+
+\subsection{Collegial}
+{\footnotesize \textit{\textbf{(A-Levels Computing) }}} \\
+Computerization of a library system using Ms-Access\\
+Computerization of Tennis Member Database using Visual Basic \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient}
+Java \textbullet{}   Python \textbullet{} JavaScript \textbullet{} Maple \\
+Mathematica \textbullet{} CSS \textbullet{} PHP  \\ 
+\location{Familiar}
+Haskell \textbullet{} ASM \textbullet{}  \textbullet{} Visual Basic \textbullet{} \LaTeX\ \\
+\location{On-going}
+Google Analytics \textbullet{} Python 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Compugen Inc.}
+\descript{| Print Sales Coordinator }
+\location{August 2017 - Present | Montreal, Canada}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Assist in processing of purchase orders
+\item Assist with bid management issues identified for proper costing of Print opportunities
+\item Assist with internal for data needed to develop proposals and make recommendations for clients
+\item Understand internal p rocess regarding all aspects of order management
+\item Assist in all order related issues requiring information from the Print Team
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Impark}
+\descript{| Administrative Assistant }
+\location{November 2016 - August 2017 | Montreal, Canada}
+\begin{tightemize}
+\item Managing subscriptions and payments of monthly parkers across Montreal
+\item Account receivable responsibilities while abiding PCI protocols
+\item Maintaining expense reports for Branch Managers and Directors
+\item Data capture of Detailed Project Reports (DPRs)
+\item Processing of payments from clients
+\end{tightemize}
+\sectionsep
+
+\runsubsection{MindGeek Inc.}
+\descript{| Technical Support}
+\location{June 2015 - September 2016 | Montreal, Canada}
+\begin{tightemize}
+\item Handling all incoming calls, emails and live chats in a timely manner
+\item Identify technical related problems and provide real time solutions
+\item Provide excellent customer service in friendly and professional way
+\item Responsible for department's monthly newsletter
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Concordia University}
+\descript{| Computer Store Employee}
+\location{February 2013 - October 2013 | Montreal, Canada}
+\begin{tightemize}
+\item On-the-spot troubleshooting (hardware \& software)
+\item Diagnose complex problems from customer's devices failure before sending them for repair
+\item Educated customers about store's products \& services
+\item Inventory management and reporting to store buyer
+\end{tightemize}
+\sectionsep
+
+\runsubsection{The Mauritius Commercial Bank Ltd.}
+\descript{| Trade Finance Clerk}
+\location{November 2010 - June 2011 | Mauritius}
+\begin{tightemize}
+\item Inspection of import/export documents
+\item Data collection and entry on T24 platform
+\item Listing discrepancies in documents and contacting clients
+\item Dealing with banks' swift messages
+\item Couriered important documents at end of day
+\item Occasional front desk customer service
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards \& Certificates} 
+\begin{tabular}{rll}
+2017	     & Google Analytics for Beginners | Google\\
+2010         & Grades 1-8 | ABRSM (UK)\\
+2005         & Internet and Computing Core Certification
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteering} 
+
+\begin{tabular}{rll}
+2015    & Team Ambassador | Engineering and Commerce Case Competition\\
+2015    & Marketing Director | Engineering and Computer Science Association\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}
